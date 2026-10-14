@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grão Nobre - Café Especial</title>
+    
+    //chama pelo link
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+   //navegaçao
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            
+            //nome
+            <a class="navbar-brand fw-bold" href="#">Grão Nobre</a>
+            
+            //botao celular
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            //lista da lista no menu 
+            <div class="collapse navbar-collapse justify-content-end" id="menu-principal">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Depoimentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                    <li class="nav-item ms-3">
+                        //botao de compra 
+                        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#janela-compra">Comprar agora</button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    //chamadno js
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+<!-- SEÇÃO PRINCIPAL (HERO) -->
+    <section class="bg-light py-5">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                
+                <!-- Coluna da esquerda: Textos -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h1 class="display-4 fw-bold text-dark">Café de origem,<br>torrado com propósito.</h1>
+                    <p class="lead text-secondary mt-3">
+                        A Grão Nobre trabalha direto com pequenos produtores para levar até você grãos especiais, torrados em lotes pequenos toda semana.
+                    </p>
+                </div>
+
+                <!-- Coluna da direita: Caixa da Imagem Bege -->
+                <div class="col-md-6">
+                    <div style="background-color: #d4bc8f; height: 380px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: rgba(0,0,0,0.5); font-weight: bold; letter-spacing: 1px;">
+                        IMAGEM HERO
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
