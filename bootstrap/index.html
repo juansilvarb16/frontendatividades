@@ -29,7 +29,7 @@
                     <li class="nav-item"><a class="nav-link" href="#">Depoimentos</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
                     <li class="nav-item ms-3">
-                        //botao de compra 
+                         <!-- botao de compra-->
                         <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#janela-compra">Comprar agora</button>
                     </li>
                 </ul>
@@ -57,7 +57,7 @@
                 <!-- coluna da direita -->
                 <div class="col-md-6">
                     <div style="background-color: #d4bc8f; height: 380px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: rgba(0,0,0,0.5); font-weight: bold; letter-spacing: 1px;">
-                        IMAGEM HERO
+                    
                     </div>
                 </div>
 
@@ -65,6 +65,120 @@
         </div>
     </section>
 
+    <!-- depoimentos -->
+    <section class="py-5 text-center bg-white">
+        <div class="container py-4">
+            
+            <!-- Título  -->
+            <p class="text-uppercase fw-bold text-warning mb-1" style="font-size: 0.85rem;">
+                QUEM JÁ EXPERIMENTOU
+            </p>
+            <h2 class="fw-bold text-dark mb-4">O que dizem nossos clientes</h2>
 
+            <!-- Carrossel -->
+            <div id="carrossel-depoimentos" class="carousel slide" data-bs-ride="carousel" style="max-width: 600px; margin: 0 auto;">
+                <div class="carousel-inner">
+                    
+                    <!-- Depoimento  -->
+                    <div class="carousel-item active">
+                        <div class="text-warning fs-5 mb-2">★★★★★</div>
+                        <p class="fst-italic text-secondary fs-5">
+                            "Melhor café que já experimentei em assinatura. Chega sempre fresquinho."
+                        </p>
+                        
+                        <!-- Foto do usuário e nome -->
+                        <div class="d-flex align-items-center justify-content-center gap-3 mt-4">
+                            <div style="width: 45px; height: 45px; background-color: #b08d57; border-radius: 50%;"></div>
+                            <div class="text-start">
+                                <h6 class="mb-0 fw-bold text-dark">Marina Alves</h6>
+                                <small class="text-muted">Assinante desde 2023</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Setas para navegar -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-depoimentos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrossel-depoimentos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+<section class="bg-light py-5">
+        <div class="container py-4" style="max-width: 800px;">  
+            <h2 class="text-center fw-bold text-dark mb-4">Perguntas frequentes</h2>
+            <div class="accordion" id="sanfona-faq">  
+
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta-1">
+                            Qual a validade do café após aberto?
+                        </button>
+                    </h2>
+                    <div id="resposta-1" class="accordion-collapse collapse" data-bs-parent="#sanfona-faq">
+                        <div class="accordion-body text-secondary">
+                            Recomendamos consumir em até 30 dias para manter o aroma e o sabor ideais.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resposta-3">
+                            Posso cancelar minha assinatura quando quiser?
+                        </button>
+                    </h2>
+                    <div id="resposta-3" class="accordion-collapse collapse" data-bs-parent="#sanfona-faq">
+                        <div class="accordion-body text-secondary">
+                            Sim, você pode cancelar ou pausar sem nenhuma taxa diretamente pelo seu painel.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <small class="text-secondary">&copy; 2026 Grão Nobre. Marca fictícia criada para fins didáticos.</small>
+        </div>
+    </footer>
+    <div class="modal fade" id="janela-compra" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold text-dark">Faça seu pedido:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body border-0">
+                    <form>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="opcao-pedido" id="kit-degustacao" checked>
+                            <label class="form-check-label" for="kit-degustacao">Kit de degustação</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="opcao-pedido" id="pacote-1">
+                            <label class="form-check-label" for="pacote-1">1 pacote de 250g</label>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="radio" name="opcao-pedido" id="pacote-5">
+                            <label class="form-check-label" for="pacote-5">5 pacotes de 250g</label>
+                        </div>
+
+                        <div class="text-end">
+                            <button type="button" class="btn btn-primary px-4">Ir para o carrinho</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
